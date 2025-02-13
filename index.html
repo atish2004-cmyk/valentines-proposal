@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Proposal ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="bgMusic"  src="romantic-music.mp3" loop></audio>
+    
+
+    <!-- Floating Hearts Animation -->
+    <div id="hearts-container"></div>
+
+    <div class="container">
+        <h1 class="question">Will You Be My Valentine? ❤️</h1>
+        <img src="data:image/png;base64,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" alt="Cute Bear" class="bear-image">
+
+        
+        <!-- Countdown Timer -->
+        <p id="countdown"></p>
+
+        <div class="buttons">
+            <button id="yesBtn">Yes ❤️</button>
+            <button id="noBtn">No 💔</button>
+        </div>
+        <p id="responseMessage"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
