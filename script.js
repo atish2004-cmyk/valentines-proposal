@@ -54,7 +54,7 @@ function startCountdown() {
         let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
         let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-        countdown.innerHTML = 'Valentines Day in: ${0}d ${5}h ${59}m ${29}s' ;
+        countdown.innerHTML = 'Valentines Day in: ${days}d ${hours}h ${minites}m ${seconds}s' ;
     }, 1000);
 }
 
